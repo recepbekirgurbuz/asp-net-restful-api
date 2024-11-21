@@ -13,11 +13,13 @@ namespace asp_net_restful_api.Controllers
             _logger = logger;
         }
 
+        [Route ("/")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("/privacy")]
         public IActionResult Privacy()
         {
             return View();
